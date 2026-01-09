@@ -1,6 +1,8 @@
 import { Star, TrendingUp } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import banner from '../assets/images/banner2.png';
+import playstore from '../assets/images/play_store.webp';
+import applestore from '../assets/images/apple_store.webp';
 
 function SectionA() {
       const textArray = ["County", "City", "Community"];
@@ -107,6 +109,24 @@ function SectionA() {
             </span>
           </button>
         </div>
+
+           <div className="flex justify-center md:justify-start gap-4 mt-16">
+                  <a 
+                    href="https://play.apple.com/store/apps/details?id=com.cities.mcity_mobile_app"
+                  >
+                    <div className='w-46 h-12'>
+                    <img src={applestore} alt="Download on the App Store" className='w-full h-full rounded' />
+                    </div>
+                  </a>
+                  
+                  <a 
+                    href="https://play.google.com/store/apps/details?id=com.cities.mcity_mobile_app"
+                  >
+                    <div className='w-46 h-12'>
+                  <img src={playstore} alt="Get it on Google Play" className='w-full h-full rounded' />
+                    </div>
+                  </a>
+                </div>
       </div>
 
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-400 to-transparent"></div>

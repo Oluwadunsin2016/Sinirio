@@ -12,10 +12,11 @@ import SectionH from '@/components/SectionH';
 import SectionK from '@/components/SectionK';
 import SectionL from '@/components/SectionL';
 import SectionM from '@/components/SectionM';
+import TeamSection from '@/components/TeamSection';
 
 const HomePage = () => {
   return (
-    <div className='space-y-10'>
+    <div className=''>
       <SectionA />
       <SectionB />
       <SectionC />
@@ -29,6 +30,7 @@ const HomePage = () => {
       <SectionK />
       <SectionL />
       <SectionM />
+      <TeamSection />
       <FAQ />
     </div>
   );

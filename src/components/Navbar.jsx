@@ -124,29 +124,29 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a href="#about" className={`transition-colors duration-200 line-clamp-1 font-semibold ${
-                isAtTop ? 'text-gray-400 hover:text-white' : 'text-white/50 hover:text-white'
+                isAtTop ? 'text-gray-300 hover:text-white' : 'text-gray-300 hover:text-white'
               }`}>
                 ABOUT
               </a>
               <a href="#problems" className={`transition-colors duration-200 line-clamp-1 font-semibold ${
-                isAtTop ? 'text-gray-400 hover:text-white' : 'text-white/50 hover:text-white'
+                isAtTop ? 'text-gray-300 hover:text-white' : 'text-gray-300 hover:text-white'
               }`}>
                 THE PROBLEMS
               </a>
               <a href="#opportunity" className={`transition-colors duration-200 line-clamp-1 font-semibold ${
-                isAtTop ? 'text-gray-400 hover:text-white' : 'text-white/50 hover:text-white'
+                isAtTop ? 'text-gray-300 hover:text-white' : 'text-gray-300 hover:text-white'
               }`}>
                 THE OPPORTUNITY
               </a>
               <a href="#solutions" className={`transition-colors duration-200 line-clamp-1 font-semibold ${
-                isAtTop ? 'text-gray-400 hover:text-white' : 'text-white/50 hover:text-white'
+                isAtTop ? 'text-gray-300 hover:text-white' : 'text-gray-300 hover:text-white'
               }`}>
                 OUR SOLUTIONS
               </a>
-              <a href="#market-size" className={`transition-colors duration-200 line-clamp-1 font-semibold ${
-                isAtTop ? 'text-gray-400 hover:text-white' : 'text-white/50 hover:text-white'
+              <a href="#team" className={`transition-colors duration-200 line-clamp-1 font-semibold ${
+                isAtTop ? 'text-gray-300 hover:text-white' : 'text-gray-300 hover:text-white'
               }`}>
-                MARKET SIZE
+                TEAM
               </a>
               
               {/* Resources Dropdown */}
@@ -155,7 +155,7 @@ const Navbar = () => {
                   ref={resourcesButtonRef}
                   onClick={() => setIsResourcesOpen(!isResourcesOpen)}
                   className={`transition-colors duration-200 flex items-center space-x-1 font-semibold ${
-                    isAtTop ? 'text-gray-400 hover:text-white' : 'text-white/50 hover:text-white'
+                    isAtTop ? 'text-gray-300 hover:text-white' : 'text-gray-300 hover:text-white'
                   }`}
                 >
                   <span>MORE</span>
@@ -166,65 +166,72 @@ const Navbar = () => {
                   <div className="absolute top-full right-0 mt-2 w-72 bg-blue-900 rounded-lg shadow-xl border border-gray-700 z-50">
                     <div className="py-2">
                       <a 
+                        href="#market-size" 
+                        onClick={() => setIsResourcesOpen(false)}
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
+                      >
+                        MARKET SIZE
+                      </a>
+                      <a 
                         href="#model" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         BUSINESS MODEL
                       </a>
                       <a 
                         href="#traction" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         TRACTION
                       </a>
                       <a 
                         href="#landscape" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         COMPETITIVE LANDSCAPE
                       </a>
                       <a 
                         href="#why" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         WHY NOW?
                       </a>
                       <a 
                         href="#financial-projections" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         5-YEAR FINANCIAL PROJECTIONS
                       </a>
                       <a 
                         href="#terms" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         TERMS
                       </a>
                       <a 
                         href="#vision" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         VISION
                       </a>
                       <a 
                         href="#closing" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         CLOSING
                       </a>
                       <a 
                         href="#faq" 
                         onClick={() => setIsResourcesOpen(false)}
-                        className="block px-4 py-2 text-gray-400 hover:text-white font-semibold transition-colors"
+                        className="block px-4 py-2 text-gray-300 hover:text-white font-semibold transition-colors"
                       >
                         FAQ
                       </a>
@@ -240,7 +247,7 @@ const Navbar = () => {
              <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`transition-colors ${
-                  isAtTop ? 'text-gray-400 hover:text-white' : 'text-white hover:text-white/80'
+                  isAtTop ? 'text-gray-300 hover:text-white' : 'text-white hover:text-white/80'
                 }`}
               >
                 {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -256,98 +263,105 @@ const Navbar = () => {
             <a 
               href="#about" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               ABOUT
             </a>
             <a 
               href="#problems" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               THE PROBLEMS
             </a>
             <a 
               href="#opportunity" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               THE OPPORTUNITY
             </a>
             <a 
               href="#solutions" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               OUR SOLUTIONS
             </a>
             <a 
+              href="#team" 
+              onClick={() => setIsMenuOpen(false)} 
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
+            >
+              TEAM
+            </a>
+            <a 
               href="#market-size" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               MARKET SIZE
             </a>
             <a 
               href="#model" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               BUSINESS MODEL
             </a>
             <a 
               href="#traction" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               TRACTION
             </a>
             <a 
               href="#landscape" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               COMPETITIVE LANDSCAPE
             </a>
             <a 
               href="#why" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               WHY NOW?
             </a>
             <a 
               href="#financial-projections" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
               5-YEAR FINANCIAL PROJECTIONS
             </a>
             <a 
               href="#terms" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
              TERMS
             </a>
             <a 
               href="#vision" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
              VISION
             </a>
             <a 
               href="#closing" 
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
              CLOSING
             </a>
             <a 
               href="#faq"
               onClick={() => setIsMenuOpen(false)} 
-              className="block px-3 py-2 text-gray-400 hover:text-white transition-colors"
+              className="block px-3 py-2 text-gray-300 hover:text-white transition-colors"
             >
              FAQ
             </a>
